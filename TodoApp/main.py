@@ -1,6 +1,6 @@
 from typing import Optional
 from fastapi import FastAPI, Depends
-import models
+from . import models
 from database import engine
 from routers import auth, todos
 from company import companyapis, dependencies
