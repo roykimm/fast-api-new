@@ -1,9 +1,9 @@
 from typing import Optional
 from fastapi import FastAPI, Depends
 from . import models
-from database import engine
-from routers import auth, todos
-from company import companyapis, dependencies
+from .database import engine
+from .routers import auth, todos
+from .company import companyapis, dependencies
 
 app = FastAPI()
 

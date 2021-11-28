@@ -1,12 +1,10 @@
 from .auth import get_current_user, get_user_exception
 from pydantic import BaseModel, Field
 from sqlalchemy.orm import Session
-from database import engine, SessionLocal
-import models
+from ..database import engine, SessionLocal
+from .. import models
 from fastapi import Depends, HTTPException, APIRouter
 from typing import Optional
-import sys
-sys.path.append("..")
 
 
 router = APIRouter(
